@@ -1,0 +1,43 @@
+/*********************** themepark.php css *******************/
+
+/*****************do not delete below**********************/
+.heading{
+   padding: 10px 20px;
+   margin-left: 50px;
+   margin-right: 50px;
+}
+
+h1{
+   color:#591C1F;
+   font-size: 40px;
+   text-shadow: 0 0 20px rgba(196, 161, 82, 0.9);
+}
+
+/**** custom buttons TEMP ******/
+.btn{
+  line-height: 50px;
+  border-radius: 20px;
+  font-size: large;
+  background: rgba(239, 23, 11, 0.7) !important;
+  /*border: 1px solid rgba(155, 141, 12, 0.7);*/
+   border: 3px dashed rgba(234, 199, 60, 1);
+  white-space: normal !important;
+ 
+}
+
+.btn-block{
+   margin: 10px auto !important ;
+   
+}
+
+/*********************ADD NEW CSS BELOW ********************8*/
+
+/*#footer {
+   position:absolute;
+   bottom:0;
+   width:20%;
+   height:27px;  
+   background-color: white;
+}*/
+
+

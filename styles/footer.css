@@ -1,0 +1,33 @@
+/********************* footer.css *************/ 
+    .navbar{
+      border-radius: 0px !important;
+      height: 10vh !important;
+      z-index: 500;  
+    }
+    .nav{
+      padding-left: 20px !important;
+    }
+    
+    #footer{
+      position: fixed !important;
+      z-index: 500; 
+    }
+    
+    li{
+      color:white;
+      margin: 0px 5px 0px 5px !important;
+      -webkit-transition-duration: 0.4s; /* Safari */
+      transition-duration: 0.6s;
+    }
+    
+    .nav>li {
+      display: inline-block !important;
+    }
+    
+
+    .nav>li>a>img {
+      width: 75%;  
+    }
+    
+ /****** do not delete above - add below *********/   
+   

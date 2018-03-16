@@ -1,0 +1,43 @@
+body{
+  background-color: #ebebe0;
+  position: static;
+  overflow: auto;
+
+}
+
+#window{
+  
+  padding: 30px;
+  
+  border: 1px dotted white;
+  height: 100vh;
+  padding: 30px 80px;
+  background-image: url("../images/backgroundtry.png");
+  overflow: auto;
+}
+
+h1{
+  color: white;
+}
+
+.row{
+  padding: 20px;
+}
+
+.box{
+    
+    position: static;
+}
+
+/*****hides col-md-9 on mobile to display only col-sm-12********/
+/*@media (max-width: 767px) { 
+    .col-md-9 {
+        display:none !important;
+    }
+}
+
+@media (max-width: 767px) { 
+    .col-md-3 {
+        display:none !important;
+    }
+}*/

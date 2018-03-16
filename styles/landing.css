@@ -1,0 +1,182 @@
+/******* landing.php css *****/  
+/**do not delete      EM: Last revision - 5/14/17**/
+   body{
+      background: #333;
+   }
+   
+   .container-fluid{
+      padding-left: 0px !important;
+      padding-right: 0px !important;
+   }
+   
+   /*.col-md-11{*/
+   /*   padding-left: 0px !important;*/
+   /*   padding-right: 0px !important;*/
+   /*}*/
+   
+   h1{
+      color:#591C1F;
+      font-size: 40px;
+      text-shadow: 0 0 20px rgba(196, 161, 82, 0.9);
+   }
+   
+   h3{
+      margin-top: 10px !important;
+      margin-bottom: 20px !important;
+      text-shadow: 0 0 5px rgb(7, 252, 232);
+     
+   }
+   
+   .errors{
+      z-index: 1000;
+   }
+   
+   /*do not mess with this hides errors */
+   .error{
+      display: none;
+   }
+
+   #background {
+      position: absolute;
+      height: 100vh;
+      z-index: -500;
+      width: 100%;
+   
+   }
+   
+   #bgSize{
+      padding-left: 0px !important;
+      padding-right: 0px !important;
+   }
+   
+   #logo{
+      
+      /*width: 65% !important;*/
+      padding: 30px 50px;
+   }
+   
+   #logoSignup{
+      /*width: 65% !important;*/
+      /*padding: 50px 50px;*/
+      margin-top: 0px !important;
+      margin-bottom: 0px !important;
+   }
+   
+   #formbox{
+      margin-top: 10px;
+      padding: 40px 20px 40px 20px;
+      background: rgba(255, 255, 255, 0.7);
+      /*border-radius: 10px;*/
+      font-size: 16px;
+    
+   }
+   
+   .form-control{
+      height: 22px !important;
+   }
+   
+   input{
+      font-size: 16px;
+   }
+   
+   #formboxRegister{
+      margin-top: 10px;
+      padding: 10px 20px 40px 20px;
+      background: rgba(255, 255, 255, 0.7);
+      /*border-radius: 10px;*/
+      font-size: 16px;
+   }
+   
+   
+/*   .center_div{
+       margin: 0 auto;
+       width:70% /* value of your choice which suits your alignment 
+   }*/
+   
+
+/*for mobile/ tablet */
+   /*@media only screen and (min-width: 320px){
+      
+
+      [class*="col-xs-12"] {
+        
+         padding-left: 0px !important;
+         padding-right: 0px !important;
+         
+      }
+      
+      #logoRegister{
+          width: 50% !important;
+      }
+      
+      #background{
+         position: fixed !important;
+         height: 100vh !important;
+         z-index: -100;
+      
+      }
+         
+      #formboxRegister{
+         margin-top: 10px;
+         padding: 10px 20px 40px 20px;
+         background: rgba(255, 255, 255, 0.7);
+         border-radius: 10px;
+         font-size: 16px;
+     
+      } 
+      
+      [class*="col-sm-12"] {
+         width: 100%;
+         
+      }
+       
+      .container{
+         padding-left: 0px !important;
+         padding-right: 0px !important;
+      }
+      
+      #background{
+         position: fixed !important;
+         height: 100vh !important;
+         z-index: -100;
+      }  
+   }*/
+
+   
+   
+   .btn{
+      background: rgba(226, 38, 38, 0.7) !important;
+   }
+   
+   .btn:active{
+      background: rgb(137, 128, 128) !important;
+   }
+   
+   .btn:hover{
+      background: rgb(137, 128, 128) !important;
+   }
+   
+   .btn-toolbar> .btn{
+      margin-left: 30px !important;
+   }
+   
+   .form-control{
+      font-size: large !important;
+   }
+   
+   a{
+      text-align: center;
+      font-size: large;
+   }
+   
+   a:hover{
+      text-shadow: 0px 0px 2px #07E7F7;
+      font-size: 20px;
+   }
+
+
+
+
+
+
+

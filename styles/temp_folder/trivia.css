@@ -1,0 +1,81 @@
+/*******VERSION 3 TRIVIA PAGE ********************/
+
+
+.heading{
+   padding: 10px 20px 0px 20px;
+   margin-left: 40px;
+   margin-right: 40px;
+}
+
+h1{
+   color:#4C7FB2;
+   font-size: 30px !important;
+  /* text-shadow: 0 0 20px rgba(196, 161, 82, 0.9);*/
+   text-shadow: 0 0 20px rgba(102, 127, 153, 0.9);
+}
+
+/*/******* trivia buttons ********************/
+ul{
+  list-style-type: none !important;
+}
+
+
+.quizContainer{
+  padding: 0px 10px;
+}
+.result{
+  margin-top: 30px;
+}
+
+.question{
+  font-size: large !important;
+  color: #333;
+  text-shadow: 0 0 20px rgba(234, 199, 60, 0.9);
+  word-spacing: 3px;
+  padding-bottom: 20px !important;
+  
+}
+
+#next{
+   font-size: large !important;
+   background: rgba(76, 127, 178, 0.6);
+ 
+}
+
+.quizMessage{
+  color:red !important;
+  font-size: large !important;
+  
+  
+}
+
+
+.alert {
+    padding: 20px;
+    background-color: #f44336; /* Red */
+    color: white;
+    margin-bottom: 15px;
+}
+
+.result{
+  color: rgb(0, 35, 124) !important;
+  font-size: large !important;
+  
+}
+
+.btn{
+  background: rgba(76, 127, 178, 0.3) !important;
+  border: 2px dashed rgba(234, 199, 60, 1);
+  white-space: normal !important;
+  margin-bottom: 5px !important;
+  line-height: 30px;
+ 
+}
+
+#back .btn{
+   background: rgba(229, 186, 13, 0.6) !important;
+   color: black;
+   font-size: 17px;
+}
+
+
