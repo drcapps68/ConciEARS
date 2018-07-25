@@ -116,6 +116,12 @@ session_start();
         $controller->peterpan();
     });
 
+     //route to the peter pan food page
+    $f3->route('GET /ppfood',function($f3) {
+        $controller = new Controller($f3);
+        $controller->ppfood();
+    });
+
      //route to the peter pan trivia levels page
     $f3->route('GET /pplevels',function($f3) {
         $controller = new Controller($f3);
@@ -139,6 +145,12 @@ session_start();
     $f3->route('GET /ppAdvance',function($f3) {
         $controller = new Controller($f3);
         $controller->ppAdvance();
+    });
+
+     //route to the peter pan trivia page
+    $f3->route('GET /ppinfo',function($f3) {
+        $controller = new Controller($f3);
+        $controller->ppinfo();
     });
 
     //route to the Haunted Mansion main page
@@ -195,11 +207,13 @@ session_start();
        $controller->spacemountain();
     });
 
-    //route to the Space Mountain trivia levels page
+    //route to the Seven Dwarfs trivia levels page
     $f3->route('GET /spacemountaintrivialevels',function($f3) {
         $controller = new Controller($f3);
         $controller->spacemountainTriviaLevels();
     });
+
+    
 
     //route to the Space Mountain trivia beginners page
    $f3->route('GET /spacemountainbeginner',function($f3) {
@@ -212,60 +226,6 @@ session_start();
        $controller = new Controller($f3);
        $controller->pirates();
     });
-
-    //route to the Enchanted Tiki Room ride page
-    $f3->route('GET /tikiroom',function($f3) {
-       $controller = new Controller($f3);
-       $controller->tikiroom();
-    });
-
-    //route to the Enchanted Tiki Room trivia levels page
-    $f3->route('GET /tikiroomtrivialevels',function($f3) {
-        $controller = new Controller($f3);
-        $controller->tikiroomTriviaLevels();
-    });
-
-    //route to the Enchanted Tiki Room trivia beginners page
-   $f3->route('GET /tikiroombeginner',function($f3) {
-       $controller = new Controller($f3);
-       $controller->tikiroomBeginner();
-   });
-
-   //route to Jungle Cruise ride page
-   $f3->route('GET /junglecruise',function($f3){
-        $controller = new Controller($f3);
-        $controller->junglecruise();
-   });
-
-   //route to Jungle Cruise trivia levels page
-   $f3->route('GET /junglecruisetrivialevels', function($f3){
-        $controller = new Controller($f3);
-        $controller->junglecruiseTriviaLevels();
-   });
-
-   //route to the Jungle Cruise trivia beginners page
-   $f3->route('GET /junglecruiseBeginner', function($f3){
-        $controller = new Controller($f3);
-        $controller->junglecruiseBeginner();
-   });
-
-  //  route to The Magic Carpets of Aladdin ride page
-  $f3->route('GET /magiccarpets', function($f3){
-        $controller = new Controller($f3);
-        $controller->magiccarpets();
-  });
-
-  //route to The Magic Carpets of Aladdin trivia levels page
-  $f3->route('GET /magiccarpetstrivialevels', function($f3){
-        $controller = new Controller($f3);
-        $controller->magiccarpetsTriviaLevels();
-  });
-
-  //route to The Magic Carpets of Aladdin trivia beginners page
-  $f3->route('GET /magiccarpetsBeginner', function($f3){
-        $controller = new Controller($f3);
-        $controller->magiccarpetsBeginner();
-  });
 
     //route to the big thunder ride page
     $f3->route('GET /bigthunder',function($f3) {
@@ -284,74 +244,6 @@ session_start();
         $controller = new Controller($f3);
         $controller->bigthunderBeginner();
     });
-
-    //======BARNSTORMER SECTION =====//
-
-    //route to the barnstormer main page
-    $f3->route('GET /barnstormer',function($f3) {
-        $controller = new Controller($f3);
-        $controller->barnstormer();
-    });
-
-     //route to the barnstormer trivia levels page
-    $f3->route('GET /barnstormerlevels',function($f3) {
-        $controller = new Controller($f3);
-        $controller->barnstormerTriviaLevels();
-    });
-
-     //route to the barnstormer trivia beginners page
-    $f3->route('GET /barnstormerBeginner',function($f3) {
-        $controller = new Controller($f3);
-        $controller->barnstormerBeginner();
-    });
-
-     //route to the barnstormer trivia intermediate page
-    $f3->route('GET /barnstormerIntermediate',function($f3) {
-        $controller = new Controller($f3);
-        $controller->barnstormerIntermediate();
-    });
-
-     //route to the barnstormer trivia advanced page
-    $f3->route('GET /barnstormerAdvance',function($f3) {
-        $controller = new Controller($f3);
-        $controller->barnstormerAdvance();
-    });
-
-    //=====DUMBO SECTION ====//
-
-    //route to the Dumbo the flying elephant main page
-    $f3->route('GET /dumbo',function($f3) {
-        $controller = new Controller($f3);
-        $controller->dumbo();
-    });
-
-     //route to the Dumbo the flying elephant trivia levels page
-    $f3->route('GET /dumbolevels',function($f3) {
-        $controller = new Controller($f3);
-        $controller->dumboTriviaLevels();
-    });
-
-     //route to the Dumbo the flying elephant trivia beginners page
-    $f3->route('GET /dumboBeginner',function($f3) {
-        $controller = new Controller($f3);
-        $controller->dumboBeginner();
-    });
-
-     //route to the Dumbo the flying elephant trivia intermediate page
-    $f3->route('GET /dumboIntermediate',function($f3) {
-        $controller = new Controller($f3);
-        $controller->dumboIntermediate();
-    });
-
-     //route to the Dumbo the flying elephant trivia advanced page
-    $f3->route('GET /dumboAdvance',function($f3) {
-        $controller = new Controller($f3);
-        $controller->dumboAdvance();
-    });
-
-
-
-
 
 
 
