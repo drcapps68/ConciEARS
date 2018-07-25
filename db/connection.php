@@ -1,11 +1,10 @@
-<?php
-    
+ <?php 
     /**
      *Provides the database connection
      *
      *PHP version 7
      *
-     *@author Dan Capps <dcapps@mail.greenriver.edu>
+     *@author Liz Mahoney <emahoney5@mail.greenriver.edu>
      *@version 1.0
      */
     
@@ -16,9 +15,9 @@
      */
     function getConnection()
     {
-        $dsn = 'mysql:host=localhost;dbname=dcapps_conciears';
-        $username = 'dcapps_conciears';
-        $password = 'W!nn1e123';
+        $dsn = 'mysql:host=localhost;dbname=conciear_database';
+        $username = 'conciear_admin';
+        $password = 'x8Hy,g7WTrU7';
     
         
         try{

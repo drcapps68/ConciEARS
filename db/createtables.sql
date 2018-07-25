@@ -1,5 +1,8 @@
-CREATE TABLE rides(
+CREATE TABLE rides
+(
     ride_id VARCHAR(5) PRIMARY KEY UNIQUE NOT NULL,
+    ride_name VARCHAR(50) NOT NULL,
+    ride_id VARCHAR(5) UNIQUE NOT NULL,
     ride_name VARCHAR(50) NOT NULL
 );
 
@@ -12,31 +15,24 @@ CREATE TABLE ride_counter (
   time_stamp TIME
 )
 
-/** RIDES TABLE - FOR RIDE ID GO TO 2017 MAGIC KINGDOM MAP. ID # HAS CHANGED -EM**/
+/**rides table**/
 INSERT INTO rides
 (ride_id, ride_name)
 VALUES
-("MK15", "Swiss Family Treehouse"),
 ("MK16", "The Magic Carpets of Aladdin"),
 ("MK17", "Jungle Cruise"),
-("MK18", "Enchanted Tiki Room"),
 ("MK19", "Pirates of the Caribbean"),
 ("MK26", "Splash Mountain"),
 ("MK28", "Big Thunder Mountain Railroad"),
 ("MK38", "Haunted Mansion"),
-("MK43", "Prince Charming Regal Carrousel"),
-("MK44", "Mickey's PhilharMagic"),
-("MK45", "Peter Pan's Flight"),
-("MK46", "It's A Small World"),
-("MK47", "Enchanted Tales with Belle"),
-("MK48", "Under the Sea - Journey of The Little Mermaid"),
-("MK51", "Walt Disney World Railroad"),
-("MK53", "The Barnstormer"),
-("MK54", "Dumbo the Flying Elephant"),
-("MK55", "Mad Tea Party"),
-("MK57", "The Many Adventures of Winnie the Pooh"),
-("MK58", "Seven Dwarfs Mine Train"),
-("MK72", "Stitches Great Escape"),
+("MK44", "Prince Charming Regal Carrousel"),
+("MK46", "Peter Pan's Flight"),
+("MK47", "it's a small world"),
+("MK55", "Dumbo the Flying Elephant"),
+("MK56", "Mad Tea Party"),
+("MK58", "The Many Adventures of Winnie the Pooh"),
+("MK59", "Seven Dwarfs Mine Train"),
+("MK72", "Stitches Great Escpae"),
 ("MK73", "Tomorrowland Speedway"),
 ("MK74", "Space Mountain"),
 ("MK75", "Astro Orbiter"),
@@ -82,8 +78,21 @@ FROM ride_counter
 WHERE user_id = 1;
 
 
+/*TEST ride_counter data insert data for ride counter*/
+INSERT INTO `ride_counter` (`user_id`, `ride_id`, `time_stamp`)
+VALUES
+(2, 'MK46', '2017-05-23'),
+(1, 'MK46', '2017-04-26'),
+(2, 'MK46', '2015-01-01'),
+(2, 'MK46', '2016-02-31'),
+(1, 'MK46', '2011-06-13');
 
 
+
+
+
+INSERT INTO ride_counter2
+VALUES (1, 'MK26', '06-12-2017', CURRENT_TIME)
 
 
 
