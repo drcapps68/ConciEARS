@@ -217,7 +217,7 @@ require_once 'db/password.php';
 
             $pdo = getConnection();
 
-            $select = 'SELECT MAX(time_stamp) AS timestamp
+            $select = 'SELECT MAX(date) AS timestamp
                        FROM ride_counter
                        WHERE user_id=:user_id AND ride_id=:ride_id';
 
@@ -237,12 +237,12 @@ require_once 'db/password.php';
         function getAllRidesByUser($user_id)
         {
             $pdo = getConnection();
-
-            $select = 'SELECT ride_counter.time_stamp, rides.ride_name
+            
+            $select = 'SELECT ride_counter.date, rides.ride_name
                        FROM ride_counter, rides
                        WHERE ride_counter.user_id= :user_id 
                        AND ride_counter.ride_id = rides.ride_id
-                       ORDER BY ride_counter.time_stamp DESC';
+                       ORDER BY ride_counter.date DESC, ride_counter.time_stamp DESC';
 
             $statement = $pdo->prepare($select);
 
@@ -253,8 +253,6 @@ require_once 'db/password.php';
             //array
             $rows = $statement->fetchAll(PDO::FETCH_ASSOC);
 
-     
-            
             return $rows;
 
 
@@ -273,14 +271,14 @@ require_once 'db/password.php';
             $date = date("m-d-Y");
 
             $insert = 'INSERT INTO ride_counter
-                       (user_id, ride_id, time_stamp)
-                       VALUES(:user_id, :ride_id, :time_stamp)';
+                       (user_id, ride_id, date, time_stamp)
+                       VALUES(:user_id, :ride_id, :date, CURRENT_TIME)';
 
             $statement = $pdo->prepare($insert);
 
             $statement->bindValue(':user_id', $user_id, PDO::PARAM_STR);
             $statement->bindValue(':ride_id', $ride_id, PDO::PARAM_STR);
-            $statement->bindValue(':time_stamp', $date, PDO::PARAM_STR);
+            $statement->bindValue(':date', $date, PDO::PARAM_STR);
 
             return $statement->execute();
         }
